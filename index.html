@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Home Page</title>
   <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/slideshow.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
@@ -34,10 +36,37 @@
   <p class="p">I believe <strong>knowledge is power</strong> and sharing knowledge makes you even <em>more powerful</em>.</p>
   </div>
   
-  <div class="figure">
-  <img src="media/knowledge-exchange.jpg" alt="knowledge_is_power">
+    
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="media/knowledge-exchange.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="media/1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="media/2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">4 / 4</div>
+      <img src="media/3.jpg" style="width:100%">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
-  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>  
+  </div>
   <footer class="footer">
     <h2>Contact</h2>
     <p>mkananig&#64;hawk.iit.edu</p>
